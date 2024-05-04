@@ -134,6 +134,17 @@ end)
 end)
 
 -- Секция
+local Tab = Window:NewTab("nogame")
+
+-- Подсекция
+local Section = Tab:NewSection("автор(robanik)")
+
+-- Кнопка
+Section:NewButton("включить чит", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/Scriptnogame/main/Scriptnogame"))()
+end)
+
+-- Секция
 local Tab = Window:NewTab("автор чита")
 
 -- Подсекция
