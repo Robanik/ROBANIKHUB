@@ -134,7 +134,7 @@ end)
 end)
 
 -- Секция
-local Tab = Window:NewTab("nogame")
+local Tab = Window:NewTab("стихийные бедствия")
 
 -- Подсекция
 local Section = Tab:NewSection("автор(robanik)")
