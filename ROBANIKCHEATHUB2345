@@ -57,6 +57,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/Needmoremuwin
 end)
 
 -- Секция
+local Tab = Window:NewTab("побег от полиции бобби")
+
+-- Подсекция
+local Section = Tab:NewSection("автор(robanik)")
+
+-- Кнопка
+Section:NewButton("включить чит", "ButtonInfo", function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/-/main/Побег от бобби полиция"))()
+end)
+
+-- Секция
 local Tab = Window:NewTab("parkour run")
 
 -- Подсекция
@@ -107,41 +118,9 @@ local Tab = Window:NewTab("teleport")
 local Section = Tab:NewSection("автор(robanik)")
 
 -- Кнопка
-Section:NewButton("teleport к концу", "ButtonInfo", function()
-game:GetService("Workspace").gogslo2111.HumanoidRootPart.CFrame = game:GetService("Workspace").CurrentStages.RunEnd.SpawnPoint.CFrame
+Section:NewButton("Parkour run", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/Parkour-run/main/Parkour run скрипт"))()
 end)
-
--- Кнопка
-Section:NewButton("teleport к началу", "ButtonInfo", function()
-game:GetService("Workspace").gogslo2111.HumanoidRootPart.CFrame = game:GetService("Workspace").Lobby.SpawnPoint.CFrame
-end)
-
--- Секция
-local Tab = Window:NewTab("бесмертие")
-
--- Подсекция
-local Section = Tab:NewSection("автор(robanik)")
-
--- Кнопка
-Section:NewButton("вкл бесмертие", "ButtonInfo", function()
-game.Players.gogslo2111.extrastats.GodModeEnabled.Value = true
-end)
-
--- Кнопка
-Section:NewButton("выкл бесмертие", "ButtonInfo", function()
-game.Players.gogslo2111.extrastats.GodModeEnabled.Value = false
-end)
-end)
-
--- Секция
-local Tab = Window:NewTab("стихийные бедствия")
-
--- Подсекция
-local Section = Tab:NewSection("автор(robanik)")
-
--- Кнопка
-Section:NewButton("включить чит", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/Scriptnogame/main/Scriptnogame"))()
 end)
 
 -- Секция
