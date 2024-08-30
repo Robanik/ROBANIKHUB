@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/HUBHUBHUB/main/ГЛАВНЫЙ ХАБ"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/HUBHUBHUB/main/ГЛАВНЫЙХАБ"))()
